@@ -64,8 +64,8 @@ def clean_csv(input_file, output_file):
     print(f"Cleaned CSV saved to {output_file}")
 
 # Set input and output file paths
-input_file = 'content_data.csv'  # Replace with your raw CSV file path
-output_file = 'cleaned_data.csv'  # Replace with your desired output file path
+input_file = 'content_data2.csv'  # Replace with your raw CSV file path
+output_file = 'cleaned_data2.csv'  # Replace with your desired output file path
 
 # Run the cleaning function
 clean_csv(input_file, output_file)

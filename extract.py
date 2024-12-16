@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 # Define the CSV filename
-csv_filename = "content_data.csv"
+csv_filename = "content_data2.csv"
 
 # Initialize the CSV with headers if it doesn't already exist
 def initialize_csv(filename):
@@ -77,3 +77,5 @@ def extract_and_save(url, content_type, topic, subtopic, filename):
         save_content_to_csv(data, filename)
     else:
         print(f"Content extraction failed for {url}.")
+    
+# extract_and_save("https://www.verywellmind.com/generalized-anxiety-disorder-4166193", "dynamic", "Mental Health", "Generalized Anxiety Disorder", csv_filename)
